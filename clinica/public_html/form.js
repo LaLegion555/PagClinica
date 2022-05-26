@@ -14,7 +14,7 @@ function r(){
 function acciónregistrar() {
     var usuario = document.getElementById('usuario').value;
     var contraseña = document.getElementById('contraseña').value;
-    if (usuario == "Julio" && contraseña == "roman") {
+    if (usuario == "Hacker" && contraseña == "Hacker") {
         alert("HOLA " + usuario);
         
     } else {
