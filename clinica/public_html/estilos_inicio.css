@@ -1,0 +1,273 @@
+@import url(https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap);
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+    
+}
+.section_titulo{
+    text-align: center;
+    font-size: 40px;
+    color: #2271b3;
+}
+.contenedor{
+    margin: auto;
+    width: 98%;
+}
+/*estilos del header*/
+.header{
+    height: 60px
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .icon-menu{
+    margin: 5px;
+    color: #2271b3;
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #2271b3;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+
+}
+/*estilos del menu*/
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu_link{
+    display: block;
+    padding: 20px;
+    background: #2271b3;
+    text-decoration: none;
+    color: #fff;
+}
+.m{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.menu_link:hover, .select{
+    background: white;
+    color: #2271b3;
+}
+.mostrar{
+    left: 0;
+}
+/*estilos de banner*/
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+}
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.banner_txt{
+    display: none;
+color: #333;
+}
+/*estilos de info*/
+.info-columna{
+    background: #2271b3;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+/*estilos de medico*/
+.doctores_columna{
+    position: relative;
+    margin-bottom: 30px;
+}
+.doctores_descripcion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    width: 60%;
+    height: 100%;
+    padding: 5px;
+}
+.doctores_titulo{
+    font-size: 25px;
+    margin: 5px 0;
+}
+.doctores_img{
+    width: 100%;
+}
+/*estilos del footter*/
+.footter{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footter .social [class^="icon-"], .icon-facebook, .icon-gplus, .icon-instagram, .icon-twitter {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 10px;
+    background: #2271b3;
+    border-radius: 50%;
+    width: 60px;
+    height: 62px;
+    line-height: 40px;
+}
+/*estilos responsive*/
+@media(min-width:480px){
+    .logo{
+        font-size: 50px;
+
+    }
+    .banner_titulo{
+        font-size: 60px;
+        margin: 5px 0;
+    }
+    .banner_txt{
+        display: block;
+        font-size: 19px;
+        margin: 7px 0;
+    }
+    .info, .doctores{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -85px;
+    }
+    .info-columna{
+        width: 32%;
+    }
+    .info_titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    .section_titulo{
+        width: 100%;
+    }
+    .doctores{
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .doctores_columna{
+        width: 49%;
+    }
+    .footter .social [class^="icon-"] {
+margin: 5px 10px;
+    }
+}
+@media(min-width: 768px){
+    .banner_titulo{
+        font-size: 50px;
+
+    }
+    .doctores_titulo{
+        font-size: 40px;
+
+    }
+}
+@media(min-width: 1024px){
+    .contenedor{
+        width: 1000px;
+    }
+    .section_titulo{
+        font-size: 50px;
+        margin: 30px 0;
+    }
+    .nav{
+        position: static;
+        width: auto;
+    }
+    .menu{
+        display: flex;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu_link{
+        background: none;
+        font-size: 20px;
+    }
+    .select{
+        color: #fff;
+        background: #2271b3;
+    }
+    .banner_titulo{
+        color: #333;
+        font-size: 60px;
+    }
+    .banner_txt{
+        color: #333;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .info{
+        margin-top: -120px;
+    }
+    .info-columna{
+        padding: 30px;
+    }
+    .info_titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    .doctores_descripcion{
+        padding: 20px;
+    }
+    .doctores_titulo{
+        font-size: 50px;
+    }
+    .doctores_txt{
+        font-size: 20px;
+    }
+}
+@media(min-width:1280px){
+    .contenedor{
+        width: 1200px;
+    }
+    .logo{
+        font-size: 70px;
+    }
+    .banner .contenedor{
+        top: 40%;
+    }
+    .info{
+        margin-top: -220px;
+    }
+}
